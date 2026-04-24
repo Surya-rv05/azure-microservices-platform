@@ -3,7 +3,7 @@
 # =============================================
 
 name: api-gateway
-replicaCount: 4
+replicaCount: 3
 
 image:
   repository: acrmicroservicesdev17e706.azurecr.io/api-gateway
