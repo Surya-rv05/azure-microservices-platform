@@ -9,7 +9,12 @@ crash.log
 # Environment files
 .env
 *.env
+login.json
+patch.yaml
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# IDE
+.vscode/
