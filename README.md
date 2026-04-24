@@ -235,27 +235,29 @@ Create ArgoCD Applications pointing to this repo.
 
 ---
 
-## 📚 What I Learned
+## 📚 Technical Highlights
 
-- Writing production-grade Terraform with remote state
-- Dockerizing Python services with security best practices
-- Kubernetes Deployments, Services, Pods, and namespaces
-- Writing reusable Helm charts with values overrides
-- Service discovery within Kubernetes clusters
-- Installing and managing ArgoCD for GitOps
-- Troubleshooting OneDrive + Helm compatibility issues
-- PowerShell vs Bash differences for DevOps work
+- Production-grade Terraform with Azure Blob remote state
+- Multi-stage Docker builds with non-root security principles
+- Kubernetes workload management across multiple replicas
+- Reusable Helm charts with environment-specific value overrides
+- Service-to-service communication via Kubernetes DNS
+- ArgoCD deployment with automated sync and self-heal
+- Zero-downtime rolling deployments
+- Multi-region deployment strategy with load balancing
 
 ---
 
-## 🗺️ Part of My Azure Learning Journey
+# 🎯 Related Work
 
-| Project | Description | Status |
-|---|---|---|
-| 01 — Portfolio Site | Azure Blob Storage + Bicep + GitHub Actions | ✅ Complete |
-| **02 — Microservices on AKS** | **Terraform + Docker + Kubernetes + Helm + ArgoCD** | **✅ Complete** |
-| 03 — DevSecOps Pipeline | Trivy + tfsec + Gitleaks + Defender | 📅 Planned |
-| 04 — Lakehouse Platform | Databricks + Delta Lake + Synapse + Power BI | 📅 Planned |
+This project is part of a broader portfolio of production-grade cloud infrastructure and DevOps solutions on Microsoft Azure:
+
+| Project | Focus Area |
+|---|---|
+| Static Site Deployment Platform | Bicep IaC, GitHub Actions CI/CD, Azure Blob |
+| **Microservices Platform on AKS** | **Terraform, Kubernetes, Helm, ArgoCD GitOps** |
+| Zero-Trust DevSecOps Pipeline | Container scanning, IaC security, Defender for Cloud |
+| Enterprise Data Lakehouse | Databricks, Delta Lake, Synapse Analytics |
 
 ---
 
