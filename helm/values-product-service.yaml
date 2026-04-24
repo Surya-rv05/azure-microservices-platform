@@ -1,0 +1,16 @@
+# =============================================
+# Product Service specific values
+# =============================================
+
+name: product-service
+replicaCount: 2
+
+image:
+  repository: acrmicroservicesdev17e706.azurecr.io/product-service
+  tag: v1
+
+containerPort: 5002
+
+service:
+  type: ClusterIP
+  port: 5002

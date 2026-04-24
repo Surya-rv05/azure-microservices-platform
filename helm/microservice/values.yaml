@@ -1,0 +1,39 @@
+# =============================================
+# Default values for microservice chart
+# These can be overridden per-service
+# =============================================
+
+# Service name
+name: my-service
+
+# Number of pod replicas
+replicaCount: 2
+
+# Container image
+image:
+  repository: acrmicroservicesdev17e706.azurecr.io/my-service
+  tag: v1
+  pullPolicy: IfNotPresent
+
+# Container port
+containerPort: 5000
+
+# Service configuration
+service:
+  type: ClusterIP
+  port: 5000
+
+# Environment variables (list)
+env: []
+
+# Resource limits
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "50m"
+  limits:
+    memory: "128Mi"
+    cpu: "200m"
+
+# Health checks
+healthCheckPath: /health

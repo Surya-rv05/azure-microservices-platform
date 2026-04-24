@@ -1,0 +1,22 @@
+# =============================================
+# API Gateway specific values
+# =============================================
+
+name: api-gateway
+replicaCount: 3
+
+image:
+  repository: acrmicroservicesdev17e706.azurecr.io/api-gateway
+  tag: v1
+
+containerPort: 5000
+
+service:
+  type: LoadBalancer
+  port: 80
+
+env:
+  - name: AUTH_SERVICE_URL
+    value: "http://auth-service:5001"
+  - name: PRODUCT_SERVICE_URL
+    value: "http://product-service:5002"
